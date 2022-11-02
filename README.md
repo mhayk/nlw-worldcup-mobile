@@ -19,3 +19,8 @@ $ npm install native-base
 $ npx expo install react-native-svg@12.1.1
 $ npx expo install react-native-safe-area-context@3.3.2
 ```
+
+## Google Fonts
+```bash
+$ npx expo install expo-font @expo-google-fonts/roboto
+```
