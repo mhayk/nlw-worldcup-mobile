@@ -24,3 +24,31 @@ $ npx expo install react-native-safe-area-context@3.3.2
 ```bash
 $ npx expo install expo-font @expo-google-fonts/roboto
 ```
+
+## React Native SVG Transformer
+(https://github.com/kristerkari/react-native-svg-transformer)[react-native-svg-transformer]
+```bash
+$ npm i react-native-svg-transformer
+```
+File: metro.config.js
+```js
+const { getDefaultConfig } = require("expo/metro-config");
+
+module.exports = (() => {
+  const config = getDefaultConfig(__dirname);
+
+  const { transformer, resolver } = config;
+
+  config.transformer = {
+    ...transformer,
+    babelTransformerPath: require.resolve("react-native-svg-transformer"),
+  };
+  config.resolver = {
+    ...resolver,
+    assetExts: resolver.assetExts.filter((ext) => ext !== "svg"),
+    sourceExts: [...resolver.sourceExts, "svg"],
+  };
+
+  return config;
+})();
+```
