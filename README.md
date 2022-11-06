@@ -66,3 +66,20 @@ module.exports = (() => {
   return config;
 })();
 ```
+
+## Google OAuth2
+- (Google Console)[https://console.cloud.google.com]
+- URIs (Authorize JavaScript origins): https://auth.expo.io
+- Authorized redirect URIs: https://auth.expo.io/@your-username/your-project-slug
+
+* It is important to remind to authenticate with expo login.
+```bash
+$ expo login
+$ expo whoami
+```
+* Code to get the authorized redirect URIs:
+```js
+import * as AuthSession from 'expo-auth-session'
+...
+console.log(AuthSession.makeRedirectUri({ useProxy: true })) // https://auth.expo.io/@mhayk/nlwworldcupmobile
+```
