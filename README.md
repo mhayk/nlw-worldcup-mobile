@@ -5,6 +5,20 @@
 $ npx expo start
 ```
 
+## Expo
+
+## Expo AuthSession
+Link: (Expo Authentication)[https://docs.expo.dev/guides/authentication/]
+```bash
+$ npx expo install expo-auth-session expo-random
+$
+```
+
+## Expo WebBrowser
+```bash
+$ npx expo install expo-web-browser
+```
+
 ## Emulator
 
 ### iOS
@@ -26,7 +40,7 @@ $ npx expo install expo-font @expo-google-fonts/roboto
 ```
 
 ## React Native SVG Transformer
-(https://github.com/kristerkari/react-native-svg-transformer)[react-native-svg-transformer]
+Link: (react-native-svg-transformer)[https://github.com/kristerkari/react-native-svg-transformer]
 ```bash
 $ npm i react-native-svg-transformer
 ```
