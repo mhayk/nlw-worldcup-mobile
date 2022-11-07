@@ -83,3 +83,12 @@ import * as AuthSession from 'expo-auth-session'
 ...
 console.log(AuthSession.makeRedirectUri({ useProxy: true })) // https://auth.expo.io/@mhayk/nlwworldcupmobile
 ```
+
+## Phosphor React Native
+* (phosphor-react-native)[https://github.com/duongdev/phosphor-react-native]
+```bash
+$ npm install --save phosphor-react-native
+```
+
+## Setup React Native Environment
+(React Native Environment)[https://react-native.rocketseat.dev/]
