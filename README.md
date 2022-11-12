@@ -92,3 +92,11 @@ $ npm install --save phosphor-react-native
 
 ## Setup React Native Environment
 (React Native Environment)[https://react-native.rocketseat.dev/]
+
+## React Navigation
+* (reactnavigation)[reactnavigation.org]
+```bash
+$ npm i @react-navigation/native
+$ npx expo install react-native-screens react-native-safe-area-context
+$ npm i @react-navigation/bottom-tabs
+```
