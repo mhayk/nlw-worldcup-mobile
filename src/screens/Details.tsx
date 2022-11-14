@@ -7,6 +7,7 @@ import { api } from '../services/api';
 import { PoolHeader } from '../components/PoolHeader';
 import { EmptyMyPoolList } from '../components/EmptyMyPoolList';
 import { Option } from '../components/Option';
+import { Share } from 'react-native'
 
 interface Participant {
     id: string;
@@ -65,6 +66,12 @@ export function Details() {
         }
     }
 
+    async function handleCodeShare() {
+        await Share.share({
+            message: pollDetails.code
+        })
+    }
+
     useEffect(() => {
         fetchPollsDetails()
     }, [id])
@@ -78,6 +85,7 @@ export function Details() {
             <Header title={pollDetails.title}
                 showBackButton
                 showShareButton
+                onShare={handleCodeShare}
             />
 
             {
