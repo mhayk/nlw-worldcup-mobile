@@ -106,7 +106,7 @@ export function Details() {
                                 onPress={() => setOptionSelected('ranking')}
                             />
 
-                            <Guesses poolId={pollDetails.id} />
+                            <Guesses poolId={pollDetails.id} code={pollDetails.code} />
                         </HStack>
                     </VStack>
                     :
