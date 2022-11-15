@@ -100,3 +100,9 @@ $ npm i @react-navigation/native
 $ npx expo install react-native-screens react-native-safe-area-context
 $ npm i @react-navigation/bottom-tabs
 ```
+
+## Dotenv
+Remind always to clear the cache before!
+```
+$ npm run start -- --clear
+```
