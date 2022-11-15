@@ -8,6 +8,7 @@ import { PoolHeader } from '../components/PoolHeader';
 import { EmptyMyPoolList } from '../components/EmptyMyPoolList';
 import { Option } from '../components/Option';
 import { Share } from 'react-native'
+import { Guesses } from '../components/Guesses';
 
 interface Participant {
     id: string;
@@ -104,6 +105,8 @@ export function Details() {
                                 isSelected={optionSelected === 'ranking'}
                                 onPress={() => setOptionSelected('ranking')}
                             />
+
+                            <Guesses poolId={pollDetails.id} />
                         </HStack>
                     </VStack>
                     :
